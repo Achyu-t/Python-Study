@@ -202,67 +202,185 @@
 
 
 
-user_inp = input().lower()
-if user_inp == 'start' : car_started = True 
-elif user_inp == 'stop' : car_started = False
+# user_inp = input().lower()
+# if user_inp == 'start' : car_started = True 
+# elif user_inp == 'stop' : car_started = False
 
-while not car_started:
-    print('The car is already at still at the start.')
-    user_inp = input().lower()
-    if user_inp == 'start' : car_started = True
+# while not car_started:
+#     print('The car is already at still at the start.')
+#     user_inp = input().lower()
+#     if user_inp == 'start' : car_started = True
 
-else:
+# else:
 
-    while user_inp != "quit":
+#     while user_inp != "quit":
 
 
-        if car_started:
-            print("The car started.... Ready to go")
+#         if car_started:
+#             print("The car started.... Ready to go")
             
-            user_inp = input().lower()
+#             user_inp = input().lower()
 
-            if user_inp == 'start': car_started = True
-            elif user_inp == 'stop': car_started = False  
+#             if user_inp == 'start': car_started = True
+#             elif user_inp == 'stop': car_started = False  
 
-            while car_started :
-                print('Car already started !!!!')
-                user_inp = input().lower()   
-            continue 
+#             while car_started :
+#                 print('Car already started !!!!')
+#                 user_inp = input().lower()   
+#             continue 
 
 
-        elif not car_started:
-            print('Car stopped')
-            user_inp = input().lower()
+#         elif not car_started:
+#             print('Car stopped')
+#             user_inp = input().lower()
             
-            if user_inp == 'start': car_started = True
-            elif user_inp == 'stop': car_started = False 
+#             if user_inp == 'start': car_started = True
+#             elif user_inp == 'stop': car_started = False 
 
-            while not car_started:
-                print('Car is in still position.')
-                user_inp = input().lower()
-            continue
+#             while not car_started:
+#                 print('Car is in still position.')
+#                 user_inp = input().lower()
+#             continue
 
         
-        else:
-            print('wrong command....')
-            user_inp = input().lower()
+#         else:
+#             print('wrong command....')
+#             user_inp = input().lower()
 
-            if car_started :
-                while user_inp == 'start':
-                    print('Car already started !!!!')
-                    user_inp = input().lower()
-                continue
+#             if car_started :
+#                 while user_inp == 'start':
+#                     print('Car already started !!!!')
+#                     user_inp = input().lower()
+#                 continue
 
-            if not car_started:
-                while user_inp== user_inp == 'stop':
-                    print('Car is in still position.')
-                    user_inp = input().lower()
-                continue
+#             if not car_started:
+#                 while user_inp== user_inp == 'stop':
+#                     print('Car is in still position.')
+#                     user_inp = input().lower()
+#                 continue
 
 
-    else:
-        quit()
-      
+#     else:
+#         quit()
+
+
+# n= 5
+
+# print("Positive" if n > 0 else "Negative")
+# result = 'Even' if n%2 == 0 else 'odd'
+# print(result)     
                                     
+# name = "panda china"
+# cap= name.capitalize()
+# print(cap  )
 
+# name = '123'
+# print(name.isdigit())
+
+# phone_num = '9823440432'
+# print(phone_num.count("4"))
+
+# nums = [1,2,3,4,5]
+
+# for num in nums:
+#     if num==3:
+#         break
+
+#     else:
+#         print("Loop complete")
+
+# import time
+
+# timer = int (input('Enter time to countdown: ')
+#                )
+# for x in reversed(range(1, timer+1)):
+
+#     time.sleep(1)
+#     print(x)
+    
+
+# print ('Times up')
+
+
+# import time
+
+# timer = int (input('Enter time to countdown: ')
+#                )
+# for x in range(timer, 0 ,-1):
+
+#     time.sleep(1)
+#     print(x)
+    
+
+# print ('Times up')
+
+
+# import time
+
+# timer = input("Enter time to count down in seconds: ")
+
+# timer= int(timer)
+
+# for x in range (timer, 0 , -1):
+
+#     seconds = x % 60
+#     minutes = (x // 60) % 60
+#     hours = (x // 3600) % 24
+
+#     time.sleep(1)
+#     print(f'{hours:02}:{minutes:02}:{seconds:02}')
+
+# print("Times up ")
+
+
+# num1 = 5.6443
+# num2= 3.141569
+# num3 = 2.2223
+# num4 = -56.34
+# num5 = 69450678
+
+# print(f'{num1:.3f}')
+
+# print(f'{num2:3}')     
+# print(f'{num3:<10}')
+
+# print(f'{num2:>10}')
+
+# print(f'{num3:+}')
+
+
+# print(f'{num2:=}')
+
+# print(f'{num1:}')
+
+# print(f'{num5:,}')
+
+
+
+
+
+# NESTED LOOPS
+
+# for x in range(1,5):
+#     print(f'{x} : ',end= "")
+#     for y in range (1,10):
+
+#         print(y, end = "")
+
+#     print()
+# print('END')
+
+
+# # print a rectangle
+
+# rows = int(input('Enter number of rows: '))
+# columns = int(input('Enter number of columns: '))
+# symbol = input("Enter symbol you want to use: ")
+
+# for x in range(0,rows):
+
+#     for y in range(columns):
+#         print(f"{symbol}", end = "")
+
+#     print()    
 
