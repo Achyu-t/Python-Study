@@ -18,7 +18,7 @@
 # print("apple" in fruits)          # Find values in a list
 
 # fruits[0] = 'pineapple'
-# # fruits[4] = "mango"    # This shos error because you cant add in list like this. Shows index out of range error
+# # fruits[4] = "mango"    # This shows error because you cant add in list like this. Shows index out of range error
 # print(fruits)
 
 
@@ -183,7 +183,110 @@
 
 # 2D Collections
 
+# fruits = ['apple', 'orange' , 'banana' , 'coconut']
+# vegetables = ['bodi', 'saag', 'cauli']
+# meat = ['chicken', 'fish' , 'mutton']
+
+# groceries = [fruits , vegetables, meat]
+
+# print(groceries)
+
+# print(groceries[1])
+
+# print(groceries[1][1])
 
 
 
+# OR
 
+# groceries = [ ['apple', 'orange' , 'banana' , 'coconut'],
+#             ['bodi', 'saag', 'cauli'],
+#             ['chicken', 'fish' , 'mutton']]                           # Same thing
+
+# print(groceries)
+
+# print(groceries[1])
+
+# print(groceries[1][1])
+
+
+# for collection in groceries:
+#     for food in collection:
+#         print(food)
+
+
+# We can have lists made up of tuples, tuples made of tuples , tuples made of sets etc.
+
+
+# Create a 2D keypad 
+
+# num_pad = ( (1, 2, 3), 
+#            (4, 5, 6), 
+#            (7, 8, 9),
+#            ('*', 0 , '#'))
+
+
+# for row in num_pad:
+#     for num in row:
+#         print(num, end= " ")
+#     print()
+
+
+
+# Python Quiz Game
+
+import time
+
+questions = ("1. What is the only planet in our solar system that spins clockwise?",
+            "2. Which element has the chemical symbol'Au'?",
+            "3. Which city is home to the ancient architectural site of Petra?", 
+            "4. What is the hardest natural substance on Earth?", 
+            "5. How many strings does a standard violin have?")
+
+options = (("A. Mars","B. Venus","C. Jupiter","D. Neptune"), 
+           ("A. Silver","B. Copper","C. Gold","D. Iron"), 
+           ("A. Egypt","B. Jordan","C. Greece","D. Turkey"),
+           ("A. Quartz","B. Topaz","C. Corundum","D. Diamond"),
+           ("A. 4","B. 5","C. 67","D. 8"))
+
+correct_answer = ("B", "C", "B" , "D" , "A")
+answers = []
+collection_index = 0 
+score = 0
+
+for question in questions:
+    print('--------------------------------------')
+    print(question)
+
+    for option in options[collection_index]:
+        print(option)
+
+    user_ans = input("Enter your option (A,B,C,D): ").upper()
+    answers.append(user_ans)
+
+    if user_ans == correct_answer[collection_index]:
+        score += 1
+        print("Correct Answer 😎")
+
+    else:
+        print("Wrong Answer 😓")
+        print(f"The correct answer is: {correct_answer[collection_index]} ")
+
+    collection_index +=1
+    time.sleep(1)
+
+print('--------------RESULTS-------------------------')
+
+print('Your answers : ', end = ' ')
+for answer in answers:
+    print(answer , end = " ")
+
+print()
+
+print('Correct answer : ', end = " ")
+for guesses in correct_answer:
+    print(guesses, end= " ")
+
+print()
+
+print(f'Total score : {score} / 5')
