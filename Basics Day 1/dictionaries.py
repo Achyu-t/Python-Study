@@ -71,5 +71,50 @@ capitals = {"Nepal":"Kathmandu" ,
 
 # Food STALL program :
 
+menu = {"Momo" : 150,
+         "Chowmein" : 160,
+         "Chicken Roll" : 200,
+         "Keema Noodles" : 190,
+         "Sausage" : 40,
+         "Drumstick" : 50
+  
+        }
+
+cart = []
+
+total = 0 
+
+index = 0 
 
 
+print('-------------MENU-------------')
+for key,value in menu.items():
+    print(f"{key:15} : Rs.{value:.2f}")
+
+print('-------------------------------')
+
+while True:
+
+    food = input("Select an item to add to cart or press q to quit: ")
+
+    if food.lower() == 'q':
+        break
+    
+    elif menu.get(food) is not None:
+
+        cart.append(food)
+
+    else:
+        print("The item is not present in the menu. Please select a different option.")
+
+print('-------------------------------')
+print('Your Order List: ')
+for food_item in cart:
+    total +=  menu.get(food_item)
+    print(food_item, end = ' ')
+
+print()
+
+print(f"Your total amount is Rs. {total}")
+
+print('-------------------------------')

@@ -385,3 +385,256 @@
 #     print()    
 
 
+
+
+
+
+
+
+# Random Numbers in Python :
+
+
+# import random
+
+# print(random.randint(1,6))                        
+
+# low = 4 
+# high = 100 
+
+# guess = random.randint(low,high)
+
+# print(guess)
+
+
+
+# random_float = random.random()   # gives random float betn 0 and 1 
+# print(random_float)
+
+
+# random_float = random.random(high , low)  This gives error because it doesnot take any argument
+
+
+
+# options = ('rock' , 'paper' , 'scissors')
+
+# option = random.choice(options)
+
+# print(option)
+
+# cards = ['A' , "2" , '3' , '4' , '5' , '6' , '7' , '8'  , '9' , '10' , 'J' , 'Q' , 'K' ]
+
+# random.shuffle(cards)
+
+# print(cards)
+
+
+
+
+
+
+
+# Number guessing game: 
+
+# import random 
+
+# print('---------Random Number Guessing Game---------------')
+
+
+
+# METHOD 1 without isdigit()
+
+# print('Game quits if user types q in input or user guesses correctly.')
+
+# lowest = 1
+# highest = 100
+
+# random_number = random.randint(lowest, highest)
+
+
+# while True: 
+
+#     user_guess = input("Enter your guess : ")
+
+#     if user_guess.lower() == 'q':
+#         break
+
+#     elif int(user_guess) == random_number:
+#         print(f"Correct guess. The number was {random_number}")
+#         break
+    
+#     elif int(user_guess) > random_number :
+#         print("The number is lower. Guess again !!!")
+    
+#     elif int(user_guess) < random_number:
+#         print('The number is higher. Guess again !!!')
+
+#     elif int(user_guess)  < 1 or user_guess > 100 :
+#         print('The number is between 0 and 100') 
+
+
+
+
+
+# METHOD 2 with isdigit()
+
+    
+# lowest = 1
+# highest = 100
+
+# random_number = random.randint(lowest, highest)
+
+# print(f"Guess a number between {lowest} and {highest} or press q to quit")
+
+# i= 0
+
+# while True:
+#     guess = input("Enter your guess: ")
+#     i += 1
+    
+
+#     if guess.isdigit() :
+
+#         guess = int(guess)
+
+#         if guess < lowest or guess > highest:
+#             print(f"Guess out of range. Try another number between {lowest} and {highest}")
+#             continue
+        
+#         elif guess == random_number:
+#             print(f"Correct guess. The random number was {guess}.")
+#             print(f"The total number of tries:  {i}")
+#             break
+
+#         elif guess > random_number :
+#             print("The number is lower. Guess again !!!")
+    
+#         elif guess < random_number:
+#             print('The number is higher. Guess again !!!')
+
+#     elif guess.lower() == 'q' :
+#         break
+    
+#     else:
+#         print("Enter valid numerical value. ")
+#         continue
+
+
+
+
+# Rock paper scissors game
+
+# import random
+# print("Lets play rock paper scissors")
+# print('User can type either rock , paper or scissors')
+
+# options = ('Rock', 'Paper', 'Scissors')
+
+# play = True
+
+# while play:
+
+#     computer_answer = random.choice(options)
+
+#     user_input = input("Enter your input: ")
+
+#     if user_input.capitalize() in options :
+
+#         print(f"Your choice is: {user_input}")
+#         print(f'Computer choice is: {computer_answer} ')
+
+#         user_input = user_input.lower()
+#         computer_answer = computer_answer.lower()
+
+
+
+# #---------------------------------------------------------------Works but below option is more clean and short---------------------------------------------------------
+#         # if user_input == "rock":
+#         #     if computer_answer == 'paper':
+#         #         print("You loose")
+#         #         break
+#         #     elif computer_answer == 'scissors':
+#         #         print("You win")
+#         #         break
+#         #     else :
+#         #         print("Same answer. Try again")
+#         #         
+
+#         # if user_input == "paper":
+#         #     if computer_answer == 'scissors':
+#         #         print("You loose")
+#         #         break
+#         #     elif computer_answer == 'rock':
+#         #         print("You win")
+#         #         break
+#         #     else :
+#         #         print("Same answer. Try again")
+#         #                 
+
+#         # if user_input == "scissors":
+#         #     if computer_answer == 'rock':
+#         #         print("You loose")
+#         #         break
+#         #     elif computer_answer == 'paper':
+#         #         print("You win")
+#         #         break
+#         #     else :
+#         #         print("Same answer. Try again")
+#         #         
+# #----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#         if user_input == computer_answer:                             # More cleaner approch
+#             print("Its a tie. Try again")
+#             continue
+
+#         elif user_input == 'rock' and computer_answer == 'scissors':
+#             print("You win")
+            
+
+#         elif user_input == 'paper' and computer_answer == 'rock':
+#             print("You win")
+            
+
+#         elif user_input == 'scissors' and computer_answer == 'paper':
+#             print("You win")
+            
+#         else: 
+#             print("You loose")
+            
+#         if not input("Do you want to play again? Press 'y' if YES : ").lower() == 'y': 
+#             play = False
+
+
+#     else:
+#         print("Wrong value . Only choose between rock, paper and scissors")
+
+    
+
+
+# MEMBERSHIP OPERATORS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Dice roller
+
+# import random
+
