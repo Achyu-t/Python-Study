@@ -289,6 +289,9 @@
 #     else:
 #         print("Loop complete")
 
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
 # import time
 
 # timer = int (input('Enter time to countdown: ')
@@ -356,7 +359,7 @@
 # print(f'{num5:,}')
 
 
-
+#----------------------------------------------------------------------------------------------------------------------------------------------#
 
 
 # NESTED LOOPS
@@ -385,10 +388,7 @@
 #     print()    
 
 
-
-
-
-
+#----------------------------------------------------------------------------------------------------------------------------------------------#
 
 
 # Random Numbers in Python :
@@ -430,7 +430,7 @@
 
 
 
-
+#----------------------------------------------------------------------------------------------------------------------------------------------#
 
 
 # Number guessing game: 
@@ -519,7 +519,7 @@
 #         continue
 
 
-
+#----------------------------------------------------------------------------------------------------------------------------------------------#
 
 # Rock paper scissors game
 
@@ -608,9 +608,328 @@
 #         print("Wrong value . Only choose between rock, paper and scissors")
 
     
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+# MEMBERSHIP OPERATORS : in and not in   ( Return true or false (boolean) ) 
+
+# word = "PANDA"
+
+# letter = input("Guess a letter in secret word: ")
+
+# if letter in word:
+#     print("The letter is present in word")
+
+# else: 
+#     print("The letter is not present")
 
 
-# MEMBERSHIP OPERATORS
+
+# grades = { "Cunha":"A" , "Mbeumo":"B"  , "Sesko":"C" ,"Bruno":"D"}
+
+# student = input("Enter the student you want to search: ")
+
+# if student in grades:
+#     print(f'{student} is in grade {grades[student]}')
+
+# else:
+#     print(f'{student} was not found in school data')
+
+
+
+
+# EXERCISE - 2 FOR MEMBERSHIP OPERATOR
+
+# email = "abcd@hotmail.com"
+
+# if "@" and "." in email:
+#     print("Vaid email")
+
+# else:
+#     print("Emaill provided is invalid")
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+# LIST COMPREHENSION : Concise way to create lists in Python which is compact and easier to read than traditional loops. 
+
+
+# doubles = []
+
+# for value in range(1,11):
+#     doubles.append(value*2)
+
+# print(doubles)
+
+# Faster method:  Syntax: variabe = [expression for loop condition]
+
+# double = [x*2 for x in range(1,11) ]
+# print(double)
+
+
+# Exercise 
+
+# fruits = ['apples', 'banana' , 'coconut', 'mango']
+# print(fruits)
+# x= True
+# cap_fruits = [abcd.upper() for abcd in fruits if x==True]
+# print(cap_fruits)
+
+# ini_fruits = [x[0] for x in fruits]
+# print(ini_fruits)
+
+
+
+# abcd = 1,2,3,4
+
+# print(abcd , type(abcd))
+
+
+# pqrs = 7,8,89,10
+
+# print(abcd, pqrs , "My name is Raj")
+
+# numbers  = [1,-2,3,-4,5,-6]
+
+# positive_num = [num for num in numbers if num >= 0 ]
+
+# print(positive_num)
+
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+ 
+
+# Switch cases   (MATCH CASE)
+
+# def day_of_week(day):
+#     match day :
+#         case 1:
+#             return "Sunday"
+#         case 2:
+#             return "Monday"
+#         case 3:
+#             return "Tuesday"
+#         case 4:
+#             return "Wednesday"
+#         case 5:
+#             return "Thursday"
+#         case 6:
+#             return "Friday"
+#         case 7:
+#             return "Saturday"
+
+# print(day_of_week(3))
+
+
+
+
+
+# def is_weekend(day):
+#     match day :
+#         case 'Sunday' | 'Saturday' | '':
+#             return True
+#         case "Monday" | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday':
+#             return False
+
+
+# print(is_weekend('Tuesday'))
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+# Modules:
+
+
+# import math
+
+# print(math.pi)
+
+
+# import math as history
+
+# print(history.pi)
+
+
+
+
+
+# from math import pi
+
+# print(pi)
+
+
+
+
+
+# from math import e 
+
+# print(e)
+
+
+# a,b,c,d,e = 1,2,3,4,5
+
+
+# print(e ** a)
+# print(e ** b)
+# print(e ** c)
+# print(e ** d)
+# print(e ** e)           # Using from can casue such naming conflicts. Here both e from math and e variable are same . So the progeam chooses the newest provided e and ignore the one from math module.
+
+
+# Create a module:
+
+
+# import wronglearn as w
+
+# print(w.area(5))
+
+# print(w.circumference(5))
+
+# print(w.cube(5))
+
+# print(w.square(5))
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

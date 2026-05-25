@@ -1,9 +1,9 @@
 # Dictionaries are a collection of {key : value} pairs . They are ordered and changeable and no duplicates are allowed. Eg: {Roll1 : Ram}
 
-capitals = {"Nepal":"Kathmandu" ,
-             "USA" : "Washington DC",
-             "China" : "Beijing",
-             "Japan" : "Tokyo"}
+# capitals = {"Nepal":"Kathmandu" ,
+#              "USA" : "Washington DC",
+#              "China" : "Beijing",
+#              "Japan" : "Tokyo"}
 
 
 # print(dir(capitals))  
@@ -12,6 +12,7 @@ capitals = {"Nepal":"Kathmandu" ,
 
 # print(capitals.get("India"))
 
+# print(capitals["USA"])    #This ine also works same as get
 
 # if capitals.get("Russia"):
 #     print("The capital country pair exists in the dictionary")
@@ -71,50 +72,74 @@ capitals = {"Nepal":"Kathmandu" ,
 
 # Food STALL program :
 
-menu = {"Momo" : 150,
-         "Chowmein" : 160,
-         "Chicken Roll" : 200,
-         "Keema Noodles" : 190,
-         "Sausage" : 40,
-         "Drumstick" : 50
+# menu = {"Momo" : 150,
+#          "Chowmein" : 160,
+#          "Chicken Roll" : 200,
+#          "Keema Noodles" : 190,
+#          "Sausage" : 40,
+#          "Drumstick" : 50
   
-        }
+#         }
 
-cart = []
+# cart = []
 
-total = 0 
+# total = 0 
 
-index = 0 
+# index = 0 
 
 
-print('-------------MENU-------------')
-for key,value in menu.items():
-    print(f"{key:15} : Rs.{value:.2f}")
+# print('-------------MENU-------------')
+# for key,value in menu.items():
+#     print(f"{key:15} : Rs.{value:.2f}")
 
-print('-------------------------------')
+# print('-------------------------------')
 
-while True:
+# while True:
 
-    food = input("Select an item to add to cart or press q to quit: ")
+#     food = input("Select an item to add to cart or press q to quit: ")
 
-    if food.lower() == 'q':
-        break
+#     if food.lower() == 'q':
+#         break
     
-    elif menu.get(food) is not None:
+#     elif menu.get(food) is not None:
 
-        cart.append(food)
+#         cart.append(food)
 
-    else:
-        print("The item is not present in the menu. Please select a different option.")
+#     else:
+#         print("The item is not present in the menu. Please select a different option.")
 
-print('-------------------------------')
-print('Your Order List: ')
-for food_item in cart:
-    total +=  menu.get(food_item)
-    print(food_item, end = ' ')
+# print('-------------------------------')
+# print('Your Order List: ')
+# for food_item in cart:
+#     total +=  menu.get(food_item)
+#     print(food_item, end = ' ')
 
-print()
+# print()
 
-print(f"Your total amount is Rs. {total}")
+# print(f"Your total amount is Rs. {total}")
 
-print('-------------------------------')
+# print('-------------------------------')
+
+
+
+
+
+
+
+
+
+grades = { "Cunha":"A" , "Mbeumo":"B"  , "Sesko":"C" ,"Bruno":"D"}
+
+# student = input("Enter the student you want to search: ")
+
+# if student in grades:
+#     print(f'{student} is in grade {grades[student]}')
+
+# else:
+#     print(f'{student} was not found in school data')
+
+
+named = [{k for k,v in grades.items() if v == "A"}]
+
+print(named)
+print(type(named))
