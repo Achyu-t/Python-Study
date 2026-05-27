@@ -7,6 +7,26 @@
 
 
 
+# Boolean: All theconditons below return False 
+
+'''  
+[] (empty list)
+{} (empty dict)
+() (empty tuple)
+'' (empty string)
+0
+None
+False
+
+'''
+
+# So :  if [] :
+#           print('a')
+
+#       else:
+#          print('b')                              This expression prints b.
+                
+
 # print('Hello world')
 
 # myName = input('what is your name')
