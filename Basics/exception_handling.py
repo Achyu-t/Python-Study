@@ -13,6 +13,10 @@ except ValueError :
     print("Enter a number you dumbass")
 
 
+# except Exception as e:                 # Another way to handle exception especially if you dont know what exception might occur
+#     print(e)
+
+
 # Another way to do is  :     except Exception :
 #                                 print("Something went wrong")
                                
